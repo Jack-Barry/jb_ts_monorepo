@@ -2,8 +2,9 @@
     "extends": "../../../tsconfig.json",
     "compilerOptions": {
         "composite": true,
-        "rootDir": "..",
+        "noEmit": false,
         "outDir": "../.compiled",
+        "rootDir": "..",
         "types": ["node", "vitest/globals"]
     },
     "include": ["../src", "."]

@@ -40,7 +40,13 @@
         "isolatedModules": true,
         "noUncheckedSideEffectImports": true,
         "moduleDetection": "force",
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "noEmit": true
     },
-    "include": ["./apps/**/*", "./packages/**/*"]
+    "include": [
+        "./apps/app_a/src",
+        "./apps/app_a/tests",
+        "./packages/package_a/src",
+        "./packages/package_a/tests"
+    ]
 }
