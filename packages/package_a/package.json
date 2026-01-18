@@ -1,0 +1,13 @@
+{
+    "name": "@jb_ts_monorepo/package_a",
+    "version": "1.0.0",
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc --build ./src",
+        "test": "vitest --run"
+    }
+}

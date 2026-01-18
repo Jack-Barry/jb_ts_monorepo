@@ -1,0 +1,19 @@
+{
+    "name": "@jb_ts_monorepo/root",
+    "version": "1.0.0",
+    "workspaces": [
+        "./apps/app_a",
+        "./packages/package_a"
+    ],
+    "scripts": {
+        "build": "npm run build --workspaces",
+        "compile": "tsc --build tsconfig.build.json",
+        "compile:watch": "npm run compile || true && npm run compile -- --watch",
+        "test": "npm run test --workspaces"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.9",
+        "typescript": "^5.9.3",
+        "vitest": "^4.0.17"
+    }
+}

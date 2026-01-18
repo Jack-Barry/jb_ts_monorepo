@@ -1,0 +1,9 @@
+{
+    "name": "@jb_ts_monrepo/app_a",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "build": "tsc --build ./src",
+        "test": "vitest --run"
+    }
+}
